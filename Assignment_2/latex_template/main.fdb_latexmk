@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1721885518.02783 "/home/hellod035/CS224N/Assignment_2/latex_template/main.tex" "main.pdf" "main" 1721885519.56521 2
+["pdflatex"] 1721885570.19676 "/home/hellod035/CS224N/Assignment_2/latex_template/main.tex" "main.pdf" "main" 1721885571.74988 2
   "/home/hellod035/CS224N/Assignment_2/latex_template/main.tex" 1721884686.47034 5780 e4ea20328b97e99a2302583f7f7c0ab8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -281,8 +281,8 @@
   "dep_parses.tex" 1721884686.45034 3041 ceeb222f2d16df528c23e109e4f18834 ""
   "example.png" 1721884686.47034 111746 d5989e276dca79a0b2e5e84effcf2ff8 ""
   "macros.tex" 1721884686.47034 660 0aa7caf33ddb384446099d7bcd0f954b ""
-  "main.aux" 1721885519.47006 3348 555723444facfab68a9743e396fc354b "pdflatex"
-  "main.out" 1721885518.52006 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.aux" 1721885571.66004 3348 555723444facfab68a9743e396fc354b "pdflatex"
+  "main.out" 1721885570.70004 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "main.tex" 1721884686.47034 5780 e4ea20328b97e99a2302583f7f7c0ab8 ""
   "q1.tex" 1721884686.47034 8018 7a849cc66f49ffed142cf81455d2ac56 ""
   "q2.tex" 1721884686.48034 4420 2bb77004721e4fe4c061fd2588f5174f ""
