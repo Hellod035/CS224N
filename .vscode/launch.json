@@ -10,7 +10,8 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "args":"namedata",
+            // "args":"namedata",
+            "args":["finetune", "vanilla", "./Assignment_4/wiki.txt"],
             // "cwd":"${fileDirname}"
         }
     ]
