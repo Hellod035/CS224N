@@ -141,7 +141,8 @@ elif args.function == 'finetune':
     #     number of epochs for each case.
 
     ### YOUR CODE HERE ###
-    pass
+    finetune_text = open(args.finetune_corpus_path, encoding='utf-8').read()
+    finetune_dataset = dataset.CharCorruptionDataset(finetune_text, block_size)
     ### END YOUR CODE ###
 elif args.function == 'evaluate':
     assert args.outputs_path is not None
