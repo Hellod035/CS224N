@@ -12,7 +12,7 @@
             "console": "integratedTerminal",
             // "args":"namedata",
             "args":["finetune", "vanilla", "wiki.txt","--writing_params_path", "vanilla.model.params","--finetune_corpus_path", "birth_places_train.tsv"],
-            "cwd":"./Assignment_4"
+            "cwd":"/home/hellod035/CS224N/Assignment_4"
         }
     ]
 }

@@ -27,7 +27,7 @@ argp.add_argument('--tb_expt_name', help='debug string for tb log.',
                   default='run')
 args = argp.parse_args()
 
-# device = 'cpu'
+torch.cuda.set_device(torch.device('cuda:0'))
 if torch.cuda.is_available():
     device = torch.cuda.current_device()
 elif torch.backends.mps.is_available() and args.variant == 'vanilla':
@@ -67,6 +67,7 @@ if args.variant == 'vanilla':
     # TODO: [part c] Make some model here
     ### YOUR CODE HERE ###
     model = models.GPT(mconf)
+    model.to(device=device)
     ### END YOUR CODE ###
 elif args.variant == 'rope':
     # TODO: [part g] Make some other model here
