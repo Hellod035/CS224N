@@ -143,12 +143,9 @@ elif args.function == 'finetune':
 
     ### YOUR CODE HERE ###
     finetune_text = open(args.finetune_corpus_path, encoding='utf-8').read()
-    finetune_corruption_dataset = dataset.CharCorruptionDataset(finetune_text, block_size)
-    finetune_name_dataset = dataset.NameDataset(finetune_corruption_dataset, finetune_text)
+    finetune_name_dataset = dataset.NameDataset(pretrain_dataset, finetune_text)
     # initialize a trainer instance and kick off training
-    tconf = trainer.TrainerConfig(max_epochs=2, batch_size=512, learning_rate=6e-4,
-                        lr_decay=True, warmup_tokens=512*20, final_tokens=2*len(finetune_name_dataset)*block_size,
-                        ckpt_path=args.writing_params_path,num_workers=4)
+    tconf = trainer.TrainerConfig(ckpt_path=args.writing_params_path)
     trainer = trainer.Trainer(model, finetune_name_dataset, None, tconf)
     trainer.train()
     trainer.save_checkpoint()
@@ -177,3 +174,4 @@ elif args.function == 'evaluate':
         print(f'Correct: {correct} out of {total}: {correct/total*100}%')
     else:
         print(f'Predictions written to {args.outputs_path}; no targets provided')
+
