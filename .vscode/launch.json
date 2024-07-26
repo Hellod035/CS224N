@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             // "args":"namedata",
-            "args":["finetune", "vanilla", "./Assignment_4/wiki.txt"],
+            "args":["finetune", "vanilla", "./Assignment_4/wiki.txt","--writing_params_path", "vanilla.model.params","--finetune_corpus_path", "birth_places_train.tsv"],
             // "cwd":"${fileDirname}"
         }
     ]

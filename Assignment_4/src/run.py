@@ -66,7 +66,7 @@ model = None
 if args.variant == 'vanilla':
     # TODO: [part c] Make some model here
     ### YOUR CODE HERE ###
-    pass
+    model = models.GPT(mconf)
     ### END YOUR CODE ###
 elif args.variant == 'rope':
     # TODO: [part g] Make some other model here
