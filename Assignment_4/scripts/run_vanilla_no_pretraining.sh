@@ -1,5 +1,5 @@
 ##! /bin/bash
-
+cd ./Assignment_4
 # Note: Don't forget to edit the hyper-parameters for part d.
 
 # Train on the names dataset
